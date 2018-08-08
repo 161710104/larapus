@@ -48,10 +48,10 @@
                             <li class="nav-item {{ Request::is('admin/authors') ? 'active ' : '' }}">
                                 <a class="nav-link" href="{{ route('authors.index') }}">Penulis</a>
                             </li>
-                            {{--  <li class="nav-item {{ Request::is('admin/books') ? 'active ' : '' }}">
+                              <li class="nav-item {{ Request::is('admin/books') ? 'active ' : '' }}">
                                 <a class="nav-link" href="{{ route('books.index') }}">Buku</a>
                             </li>
-                            <li class="nav-item {{ Request::is('admin/members') ? 'active ' : '' }}">
+                            {{-- <li class="nav-item {{ Request::is('admin/members') ? 'active ' : '' }}">
                                 <a class="nav-link" href="{{ route('members.index') }}">Member</a>
                             </li>
                             <li class="nav-item {{ Request::is('admin/statistics') ? 'active ' : '' }}">
@@ -101,6 +101,7 @@
         </nav>
 
         <main class="py-4">
+            @include('layouts._flash')
             @yield('content')
         </main>
     </div>
@@ -108,6 +109,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
     @yield('scripts')
 </body>
 </html>
