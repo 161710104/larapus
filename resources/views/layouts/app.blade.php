@@ -19,9 +19,11 @@
     {{--  <link rel="shortcut icon" href="{{ asset('img/ico.png') }}" />  --}}
     <!-- Styles -->
     
-    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery.dataTables.css') }}" rel="stylesheet">
     <link href="{{ asset('css/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/selectize.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/selectize.bootstrap3.css') }}" rel="stylesheet">
     {{--  <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">  --}}
     
 </head>
@@ -110,6 +112,8 @@
     <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('js/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="{{ asset('js/selectize.min.js') }}"></script>
+    <script src="{{ asset('js/selectize.js') }}"></script>
     @yield('scripts')
 </body>
 </html>
